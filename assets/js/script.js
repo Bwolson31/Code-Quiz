@@ -17,76 +17,92 @@ possibleAnswers: ["1: strings, numbers, and booleans",
     "3: strings, numbers, booleans, undefined, null, objects, and arrays",
     "4: strings, numbers, booleans, objects, and arrays"],
 correctAnswer: 2,
+incorrectAnswers: [0, 1, 3] 
 },
 {question: "question",
 possibleAnswers: ["1: incorrect",
     "2: incorrect",
     "3: incorrect",
     "4: correct"],
-correctAnswer: 3
+correctAnswer: 3,
+incorrectAnswers: [0, 1, 2, 3]
 },
 {question: "question",
 possibleAnswers: ["1: incorrect",
     "2: incorrect",
     "3: correct",
     "4: incorrect"],
-correctAnswer: 2
+correctAnswer: 2,
+incorrectAnswers: [0, 1, 3]
 },
 {question: "question",
 possibleAnswers: ["1: correct",
     "2: incorrect",
     "3: incorrect",
     "4: incorrect"],
-correctAnswer: 0
+correctAnswer: 0,
+incorrectAnswers: [1, 2, 3,]
 },
 {question: "question",
 possibleAnswers: ["1: incorrect",
     "2: incorrect",
     "3: incorrect",
     "4: correct"],
-correctAnswer: 3
+correctAnswer: 3,
+incorrectAnswers: [0, 1, 2]
 },
 {question: "question",
 possibleAnswers: ["1: correct",
     "2: incorrect",
     "3: incorrect",
-    "4: correct"],
-correctAnswer: 0
+    "4: incorrect"],
+correctAnswer: 0,
+incorrectAnswers: [1, 2, 3,]
 },
 {question: "question",
 possibleAnswers: ["1: incorrect",
     "2: correct",
     "3: incorrect",
-    "4: correct"],
-correctAnswer: 1
-},
-{question: "question",
-possibleAnswers: ["1: correct",
-    "2: incorrect",
-    "3: incorrect",
-    "4: correct"],
-Answer: 0
+    "4: incorrect"],
+correctAnswer: 1,
+incorrectAnswers: [0, 2, 3]
 },
 {question: "question",
 possibleAnswers: ["1: incorrect",
     "2: incorrect",
     "3: incorrect",
     "4: correct"],
-correctAnswer: 3
+correctAnswer: 0,
+incorrectAnswers: [0, 1, 2, 3]
+},
+{question: "question",
+possibleAnswers: ["1: incorrect",
+    "2: incorrect",
+    "3: incorrect",
+    "4: correct"],
+correctAnswer: 3,
+incorrectAnswers: [0, 1, 2]
 },
 {question: "question",
 possibleAnswers: ["1: incorrect",
     "2: incorrect",
     "3: correct",
-    "4: correct"],
-correctAnswer: 2
+    "4: incorrect"],
+correctAnswer: 2,
+incorrectAnswers: [0, 1, 3]
 },]
 
+function startQuiz(){
+    document.getElementsByClassName("quizContainer").style.display="block";
+}
+
+
+
 let currentQuestion = 0;
-let score= 0;
+let score = 0;
+score =+
 
 
-function generateQuiz(){
 function showQuestion() {
     const questionText = document.getElementById("questions");
     questionText.textContent = quizQuestions[currentQuestion].question;
@@ -116,7 +132,7 @@ function evaluateAnswer(selected) {
         currentQuestion++; 
         secondsLeft--;
         timeEl.textContent = "Time: " + secondsLeft;
-        // incorrectAnswers.forEach()
+        timeEl.forEach(IncorrectAnswers) = - 10;
 
 
 
@@ -126,17 +142,20 @@ function evaluateAnswer(selected) {
         } if (!currentQuestion < quizQuestions.length || secondsLeft === 0) { 
             clearInterval(timerInterval);
             const container = document.querySelector(".container");
-        container.innerHTML = `<p>You got ${score} out of ${quizQuestions.length} questions correct.<p>`}
+        container.innerHTML = `<p>All done!. You got ${score} out of ${quizQuestions.length} questions correct.<p>`
+    }
         }, 1000);
-}}
+}
 
 
-startbtn.addEventListener ('click', generateQuiz);
 
-// showQuestion();
+showQuestion();
 
-// var highScore =
+var highScore = JSON.parse(localStorage.getItem) ("")
 
-// localStorage.setItem("highScore");
+
+
+
+localStorage.getItem("highScore");
 
 

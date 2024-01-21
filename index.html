@@ -14,24 +14,23 @@
     <h2 class ="time" style="text-align: right;"></h2>
     <div class="container">
         <p>Try to answer the following 10 questions about programming within one minute. Keep in mind incorrect answers will penalize your scoretime by ten seconds!</p>
-        <button id="startbtn" class="start">START</button>
-
-
-        <!-- <p id="questions">What are the types of data in JavaScript?</p>
+        <button class ="quizContainer" onclick="startQuiz()">START</button>
+        <div class ="quizContainer">
+        <p id="questions">What are the types of data in JavaScript?</p>
         <div class="possibleAnswers">
        <button class="answer" onclick="evaluateAnswer(0)">strings, numbers, and booleans</button>
        <button class="answer" onclick="evaluateAnswer(1)">strings, numbers, booleans, undefined, and null</button>
        <button class="answer" onclick="evaluateAnswer(2)">strings, numbers, booleans, undefined, null, objects, and arrays</button>
        <button class="answer" onclick="evaluateAnswer(3)">strings, numbers, booleans, objects, and arrays</button>
-      <p id="response"></p> -->
-    </div>  
+      <p id="response"></p>
+   </div> 
+   <form id="highScoreForm"></form>
+    <label>Enter Initials: <input type ="text" /></label>
+    <button type="submit">submit</button>
+   </form>
 
-        
-    </div>
-    
+</div>  
 
-
-    </div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

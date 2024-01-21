@@ -23,14 +23,6 @@ body h1 {
   text-align: center;
 }
 
-.start {
-  background-color: #CBC3E3;
-  cursor: pointer;
-  height: 40px;
-  width: 80px;
-  font-size: 20px;
-  border-radius: 5px;
-}
 
 .possibleAnswers {
   display: flex; 
@@ -53,3 +45,17 @@ body h1 {
 box-shadow: 5px 5px black;
 }
 
+
+.quizContainer {
+  display: none;
+  background-color: #CBC3E3;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#highScoreForm {
+  display: none;
+}
