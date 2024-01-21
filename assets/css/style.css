@@ -1,3 +1,7 @@
+* {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .container {
   height: 400px;
   width: 700px;
@@ -7,3 +11,45 @@
 
 
 }
+
+
+.container {
+  margin: auto;
+  text-align: center;
+
+}
+
+body h1 {
+  text-align: center;
+}
+
+.start {
+  background-color: #CBC3E3;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.possibleAnswers {
+  display: flex; 
+  flex-direction: column;
+
+}
+
+.answer {
+  display: flex; 
+  flex-direction: start;
+  padding: 10px;
+  margin: 15px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #CBC3E3;
+  cursor: pointer;
+}
+
+.answer:hover {
+box-shadow: 5px 5px black;
+}
+
